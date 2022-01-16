@@ -1,0 +1,19 @@
+# Creating and Pushing Docker Image to AWS-ECR :
+
+ECR registry already created in aws :
+
+1- git clone https://bitbucket.org/ananthkannan/mydockerrepo.git
+
+2- Move to the folder where the artifacts have been cloned launch terminal.
+
+3- docker build . -t mypythonapp
+
+4- docker images  --- To Validate the image created 
+
+5- docker tag mypythonapp:latest 616716415641.dkr.ecr.us-east-2.amazonaws.com/simplebank:latest  : To tag the image 
+
+6- docker push 616716415641.dkr.ecr.us-east-2.amazonaws.com/simplebank:latest
+
+
+616716415641.dkr.ecr.us-east-2.amazonaws.com/simplebank:latest----URI fetched from AWS-ECR
+
